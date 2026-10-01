@@ -38,4 +38,7 @@ html,body {
 	z-index: 9999;
 	background: rgba(255,255,255,0.5);
 	mix-blend-mode: difference;
+
+	/* background-image: src; */
+	background-image: url(Ass\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ets/AY\ AY\ RON.png);
 }

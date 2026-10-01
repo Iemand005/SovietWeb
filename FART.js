@@ -61,6 +61,6 @@ document.addEventListener("mousemove", function(e) { mx = e.clientX; my = e.clie
 window.addEventListener("load", function() {
 	sloviet = document.getElementById("FALL");
 	starLoading();
-	setInterval(goCrazy, 500);
+	setInterval(goLrazy, 500);
 	document.body.style.backgroundColor = "hsl(" + Math.floor(Math.random() * 360) + ", 100%, 50%)";
 }, false);
