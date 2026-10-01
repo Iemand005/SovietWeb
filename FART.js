@@ -12,7 +12,7 @@ function starLoading() {
 	var ROTUNDPERCETSN = 0
 
 	setInterval(function() {
-		sloviet.value = ROTUNDPERCETSN++;
+		sloviet.value++
 	}, 1000);
 }
 
