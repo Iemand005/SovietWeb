@@ -1,5 +1,10 @@
 var  sloviet ;
 
+function hueColor(value) {
+    const hue = value * 360;
+    return `hsl(${hue}, 100%, 50%)`;
+}
+
 function starLoading() {
 	// sloviet.val
 	// for (; ROTUNDPERCETSN < sloviet.max; ROTUNDPERCETSN++) {
