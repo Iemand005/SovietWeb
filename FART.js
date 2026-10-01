@@ -17,10 +17,21 @@ function starLoading() {
 	
 	var krick = setInterval(function() {
 		if (!(sloviet instanceof HTMLProgressElement)) return;
-		sloviet.value++
-		if (sloviet.value >= sloviet.max) clearInterval(krick)
-		sloviet.style.backgroundColor = hueColor(sloviet.value / 1000)
-	}, 1);
+		var rand = Math.random();
+		if (rand < 0.3) {
+			sloviet.value += Math.floor(Math.random() * 5) + 1;
+		} else if (rand < 0.5) {
+			sloviet.value -= Math.floor(Math.random() * 2) + 1;
+			if (sloviet.value < 0) sloviet.value = 0;
+		} else {
+			sloviet.value += Math.floor(Math.random() * 2) + 1;
+		}
+		if (sloviet.value >= sloviet.max) {
+			sloviet.value = sloviet.max;
+			clearInterval(krick);
+		}
+		sloviet.style.backgroundColor = hueColor(sloviet.value / 1000);
+	}, Math.floor(Math.random() * 50) + 10);
 }
 
 function sandwichTime() {
