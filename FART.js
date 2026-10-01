@@ -19,6 +19,7 @@ function starLoading() {
 		if (!(sloviet instanceof HTMLProgressElement)) return;
 		sloviet.value++
 		if (sloviet.value >= sloviet.max) clearInterval(krick)
+		sloviet.style.backgroundColor
 	}, 1);
 }
 
