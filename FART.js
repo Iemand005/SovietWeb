@@ -23,9 +23,23 @@ function starLoading() {
 	}, 1);
 }
 
+function sandwichTime() {
+	var walk = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
+	while (walk.nextNode()) {
+		if (walk.currentNode.nodeValue) {
+			walk.currentNode.nodeValue = walk.currentNode.nodeValue.replace(/bandwidth|bandwith/gi, "sandwich");
+		}
+	}
+}
+
+function goCrazy() {
+	if (Math.random() < 0.5) {
+		sandwichTime();
+	}
+}
+
 window.addEventListener("load", function() {
 	sloviet = document.getElementById("FALL");
 	starLoading();
-
-
+	setInterval(goCrazy, 500);
 }, false);
