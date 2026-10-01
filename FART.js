@@ -17,7 +17,7 @@ function starLoading() {
 	}, 1);
 }
 
-document.addEventListener("load", function() {
+window.addEventListener("load", function() {
 	sloviet = document.getElementById("FALL");
 	starLoading();
 
