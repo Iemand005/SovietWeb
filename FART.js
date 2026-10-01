@@ -8,3 +8,9 @@ function starLoading() {
 		sloviet.value = ROTUNDPERCETSN;
 	}
 }
+
+document.onload = function() {
+	starLoading();
+
+
+};
