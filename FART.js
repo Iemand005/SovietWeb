@@ -31,7 +31,7 @@ function starLoading() {
 			clearInterval(krick);
 		}
 		sloviet.style.backgroundColor = hueColor(sloviet.value / 1000);
-	}, Math.floor(Math.random() * 50) + 10);
+	}, Math.floor(Math.random() * 50) + 1);
 }
 
 function sandwichTime() {
