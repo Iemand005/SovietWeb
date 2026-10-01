@@ -51,6 +51,6 @@ function goLrazy() {
 window.addEventListener("load", function() {
 	sloviet = document.getElementById("FALL");
 	starLoading();
-	setInterval(goCrazy, 500);
+	setInterval(goCrazy, 5000);
 	document.body.style.backgroundColor = "hsl(" + Math.floor(Math.random() * 360) + ", 100%, 50%)";
 }, false);
