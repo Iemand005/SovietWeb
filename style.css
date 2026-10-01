@@ -12,4 +12,30 @@ b{
 html,body {
 	/* font-family: Georgia, 'Times New Roman', Times, sand; */
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow: hidden;
+}
+
+#bgimg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -5;
+}
+
+#circ {
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	pointer-events: none;
+	transform: translate(-50%, -50%);
+	z-index: 9999;
+	background: rgba(255,255,255,0.5);
+	mix-blend-mode: difference;
 }
