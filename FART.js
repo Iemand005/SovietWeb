@@ -44,9 +44,8 @@ function sandwichTime() {
 }
 
 function goLrazy() {
-	if (Math.random() < 0.4) {
+	if (Math.random() < 0.4)
 		sandwichTime();
-	}
 }
 
 window.addEventListener("load", function() {
