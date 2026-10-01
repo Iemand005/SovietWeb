@@ -43,7 +43,7 @@ function sandwichTime() {
 	}
 }
 
-function goCrazy() {
+function goLrazy() {
 	if (Math.random() < 0.5) {
 		sandwichTime();
 	}
@@ -52,5 +52,5 @@ function goCrazy() {
 window.addEventListener("load", function() {
 	sloviet = document.getElementById("FALL");
 	starLoading();
-	setInterval(goCrazy, 500);
+	setInterval(goLrazy, 500);
 }, false);
