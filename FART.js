@@ -14,7 +14,7 @@ function starLoading() {
 		if (!(sloviet instanceof HTMLProgressElement)) return;
 		sloviet.value++
 		if (sloviet.value >= sloviet.max) clearInterval(krick)
-	}, 1000);
+	}, 10);
 }
 
 document.onload = function() {
