@@ -48,9 +48,19 @@ function goLrazy() {
 		sandwichTime();
 }
 
+var mx = 0, my = 0, cx = 0, cy = 0;
+document.addEventListener("mousemove", function(e) { mx = e.clientX; my = e.clientY; });
+(function followMouse() {
+	cx += (mx - cx) * 0.05;
+	cy += (my - cy) * 0.05;
+	var c = document.getElementById("circ");
+	if (c) { c.style.left = cx + "px"; c.style.top = cy + "px"; }
+	requestAnimationFrame(followMouse);
+})();
+
 window.addEventListener("load", function() {
 	sloviet = document.getElementById("FALL");
 	starLoading();
-	setInterval(goCrazy, 5000);
+	setInterval(goCrazy, 500);
 	document.body.style.backgroundColor = "hsl(" + Math.floor(Math.random() * 360) + ", 100%, 50%)";
 }, false);
