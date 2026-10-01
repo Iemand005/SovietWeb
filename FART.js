@@ -17,8 +17,8 @@ function starLoading() {
 	}, 1);
 }
 
-document.onload = function() {
+document.addEventListener("load", function() {
 	starLoading();
 
 
-};
+}, false);
