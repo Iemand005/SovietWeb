@@ -5,3 +5,11 @@ progress {
 	background-color: #000;
 	width: 100%;
 }
+b{
+	font-weight: bolder;
+}
+
+html,body {
+	/* font-family: Georgia, 'Times New Roman', Times, sand; */
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
