@@ -1,4 +1,4 @@
-var  sloviet = document.getElementById("FALL");
+var  sloviet ;
 
 function starLoading() {
 	// sloviet.val
@@ -18,6 +18,7 @@ function starLoading() {
 }
 
 document.addEventListener("load", function() {
+	sloviet = document.getElementById("FALL");
 	starLoading();
 
 
