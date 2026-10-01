@@ -19,7 +19,7 @@ function starLoading() {
 		if (!(sloviet instanceof HTMLProgressElement)) return;
 		sloviet.value++
 		if (sloviet.value >= sloviet.max) clearInterval(krick)
-		sloviet.style.backgroundColor
+		sloviet.style.backgroundColor = hueColor(sloviet.value / 1000)
 	}, 1);
 }
 
